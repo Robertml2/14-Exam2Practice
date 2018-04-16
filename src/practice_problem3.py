@@ -2,8 +2,8 @@
 PRACTICE Test 2, practice_problem 3.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Madison Robertson.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -64,7 +64,7 @@ def is_prime(n):
     return True
     # ------------------------------------------------------------------
     # Students:
-    #   Do NOT touch the above  is_prime  function - it has no TODO.
+    #   Do NOT touch the above  is_prime  function - it has no TOD0
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
@@ -163,6 +163,12 @@ def practice_problem3a(circles):
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ####################################################################
+
+    for k in range(len(circles)):
+        if circles[k].center.x == '':
+            return 1
+        else:
+            return circles[k].center.x * circles[k].center.x
 
 
 def run_test_practice_problem3b():

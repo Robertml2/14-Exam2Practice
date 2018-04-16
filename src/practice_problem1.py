@@ -284,13 +284,13 @@ class Box(object):
         # --------------------------------------------------------------
 
         self.volume = new_volume
-        if new_volume <= len(self.contents):
-            for k in range(len(self.contents)):
-                if
-            if k > new_volume:
-                return self.append_string(self.contents)
-            else:
-                return self.contents
+       # if new_volume <= len(self.contents):
+           # for k in range(len(self.contents)):
+
+        #if k > new_volume:
+                #return self.append_string(self.contents)
+           # else:
+            #    return self.contents
 
 
 

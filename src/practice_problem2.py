@@ -213,7 +213,10 @@ def practice_problem2b(sequence):
     ####################################################################
     seq = ''
     for k in range(len(sequence)):
-        seq = seq + (sequence[k][0])
+        if sequence[k] == '':
+            seq = seq
+        else:
+            seq = seq + (sequence[k][0])
     return seq
 
 
