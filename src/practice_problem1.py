@@ -284,8 +284,18 @@ class Box(object):
         # --------------------------------------------------------------
 
         self.volume = new_volume
-        self.contents = self.append_string(self.contents)
-        return Box(self.contents, new_volume)
+        if new_volume <= len(self.contents):
+            for k in range(len(self.contents)):
+                if
+            if k > new_volume:
+                return self.append_string(self.contents)
+            else:
+                return self.contents
+
+
+
+        #self.contents = self.append_string(self.contents)
+        #return Box(self.contents, new_volume)
 
     def double_then_shrink(self, new_volume):
         """
