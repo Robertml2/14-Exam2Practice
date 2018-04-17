@@ -413,8 +413,9 @@ class Box(object):
         # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
         ################################################################
-        self.contents = other_box.contents
-        self.contents = 
+        self.contents = other_box
+
+
 
     def get_history(self):
         """
