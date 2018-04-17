@@ -351,6 +351,7 @@ class Box(object):
         #    DIFFICULTY:      5
         #    TIME ESTIMATE:   5 minutes.
         # --------------------------------------------------------------
+        self.double()
 
     def reset(self):
         """
