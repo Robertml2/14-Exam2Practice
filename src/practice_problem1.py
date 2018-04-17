@@ -271,7 +271,7 @@ class Box(object):
           :type new_volume: int
         """
         # --------------------------------------------------------------
-        # TODO: 5. Implement and test this function.
+        # DONE: 5. Implement and test this function.
         #     The testing code is already written for you (above).
         # --------------------------------------------------------------
         # --------------------------------------------------------------
@@ -284,18 +284,20 @@ class Box(object):
         # --------------------------------------------------------------
 
         self.volume = new_volume
-       # if new_volume <= len(self.contents):
-           # for k in range(len(self.contents)):
+        leftover = ''
+        new_content = ''
+        if self.volume <= len(self.contents):
+            for k in range(new_volume, len(self.contents)):
+               leftover = leftover + self.contents[k]
+            for k in range(new_volume):
+                new_content = new_content + self.contents[k]
+            if self.contents == new_content:
+                return ''
+            self.contents = new_content
+            return leftover
+        else:
+            return leftover
 
-        #if k > new_volume:
-                #return self.append_string(self.contents)
-           # else:
-            #    return self.contents
-
-
-
-        #self.contents = self.append_string(self.contents)
-        #return Box(self.contents, new_volume)
 
     def double_then_shrink(self, new_volume):
         """
